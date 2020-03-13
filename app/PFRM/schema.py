@@ -8,5 +8,5 @@ class GithubRepoSchema(Schema):
     description = fields.Str()
     repo_url = fields.URL()
 
-class KudoSchema(GithubRepoSchema):
+class PFRMSchema(GithubRepoSchema):
     user_id = fields.Email(required=True)
